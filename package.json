@@ -1,0 +1,33 @@
+{
+    "title": "Dream PHP",
+    "name": "dream-php",
+    "description": "A dream theme that simulates PHP coloring scheme of Dreamweaver",
+    "keywords": ["light", "theme", "php", "dreamweaver"],
+    "homepage": "https://github.com/cithukyaw/DreamPHP",
+    "license": "MIT",
+
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cithukyaw/DreamPHP.git"
+    },
+
+    "bugs": {
+        "url": "https://github.com/cithukyaw/DreamPHP/issues"
+    },
+
+    "author": {
+        "name": "Sithu K.",
+        "url": "https://github.com/cithukyaw"
+    },
+
+    "theme": {
+        "file": "main.less",
+        "dark": false
+    },
+
+    "engines": {
+        "brackets": ">=1.0.0"
+    },
+
+    "version": "1.0.0"
+}
