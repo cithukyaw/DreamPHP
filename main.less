@@ -1,0 +1,172 @@
+/**
+ * Theme Dream PHP Copyright (c) 2014 sithukyaw.com
+ *
+ * Licensed under MIT
+ */
+
+
+/* Palette */
+@background: #ffffff;
+@foreground: #292e33;
+@comment:    #ff6600;
+@gray:       #999999;
+@black:      #0c0d0d;
+@lightblue:  #0e7bc9;
+@blue:       #0033ff;
+@darkblue:   #003399;
+@purple:     #9351a0;
+@red:        #ef2540;
+@darkred:    #cc0000;
+@orange:     #d8542c;
+@yellow:     #df9516;
+@green:      #008800;
+@aqua:       #3da0a4;
+
+/* Selection colors */
+@selection-color-focused:   fade(@lightblue, 25%);
+@selection-color-unfocused: fade(@gray, 35%);
+
+/* Active line colors */
+@active-line-bgcolor:        fade(@gray, 10%);
+@active-line-number-bgcolor: fade(@gray, 40%);
+@active-line-number-color:   @black;
+
+
+/* Editor styling */
+.cm-keyword        { color: darken(@green, 5%); }
+.cm-atom           { color: @orange; }
+.cm-number         { color: @green; }
+.cm-def            { color: @foreground; }
+.cm-variable       { color: @black; }
+.cm-variable-2     { color: @blue; }
+.cm-variable-3     { color: @lightblue; }
+.cm-operator       { color: @foreground; }
+.cm-comment        { color: @comment; }
+.cm-string         { color: @darkred; }
+.cm-string-2       { color: @red; }
+.cm-meta           { color: @red; }
+.cm-error          { color: @red; }
+.cm-qualifier      { color: @lightblue; }
+.cm-builtin        { color: darken(@green, 3%); }
+.cm-bracket        { color: @foreground; }
+.cm-tag            { color: @blue; }
+.cm-tag.cm-bracket { color: darken(@lightblue, 15%); }
+.cm-attribute      { color: @darkblue; }
+.cm-header         { color: @red; }
+.cm-quote          { color: @darkblue; }
+.cm-hr             { color: @orange; }
+.cm-link           { color: @yellow; }
+.cm-strong         { color: @green; }
+.cm-em             { color: @green; }
+.cm-rangeinfo      { color: @aqua; }
+.cm-minus          { color: @red; }
+.cm-plus           { color: @green; }
+.cm-property       { color: @lightblue; }
+
+.cm-matchhighlight    { border-bottom-color: @foreground; }
+.quick-view-highlight { background-color: fade(@foreground, 20%); }
+
+.CodeMirror {
+    line-height: 1.32;
+}
+
+.CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-gutters {
+    background-color: darken(@background, 2%);
+}
+
+.CodeMirror-selected {
+    background-color: @selection-color-unfocused;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background-color: @selection-color-focused;
+}
+
+.CodeMirror-searching {
+    background-color: fade(@foreground, 40%);
+    color: @background !important;
+}
+
+.CodeMirror-searching.searching-current-match {
+    background-color: @foreground;
+}
+
+.CodeMirror-nonmatchingbracket {
+    background-color: fade(@red, 50%);
+    color: @black !important;
+}
+
+.CodeMirror-focused .CodeMirror-nonmatchingbracket {
+    background-color: fade(@red, 75%);
+}
+
+.CodeMirror-matchingbracket {
+    background-color: lighten(@gray, 15%);
+    color: @black !important;
+}
+
+.CodeMirror-focused .CodeMirror-matchingbracket {
+    background-color: lighten(@gray, 15%);
+}
+
+.CodeMirror-matchingtag {
+    background-color: lighten(@gray, 15%);
+}
+
+.CodeMirror-focused .CodeMirror-matchingtag {
+    background-color: lighten(@yellow, 40%);
+}
+
+.CodeMirror-gutter-elt {
+    color: @black !important;
+}
+
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+    color: @foreground !important;
+}
+
+.CodeMirror-activeline .CodeMirror-linenumber {
+    color: @active-line-number-color !important;
+}
+
+.CodeMirror-activeline-background {
+    background-color: fadeout(@active-line-bgcolor, 15%) !important;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background-color: @active-line-bgcolor !important;
+}
+
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+    background-color: fadeout(@active-line-number-bgcolor, 15%);
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    background-color: @active-line-number-bgcolor;
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid @black;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-bottom: 1px solid @black;
+    border-left: none;
+}
+
+
+/* Non-editor styling */
+.not-editor {
+    background-color: @background;
+    transition: background-color 0.15s ease-out;
+}
+
+.image-view {
+    background-color: @background;
+    color: @foreground;
+}
