@@ -41,7 +41,7 @@ You may download and install this extension in one of three ways. Using Extensio
 ![JavaScript Screenshot](screenshots/javascript.png)
 
 # Author
-[Sithu K.](http://sithukyaw.com)
+[Sithu K.](http://www.phplucidframe.com/sithu)
 
 # License
 Released under the [MIT License](LICENSE).
